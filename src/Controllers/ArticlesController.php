@@ -8,12 +8,12 @@ class ArticlesController extends BaseController{
     public function getAll($request,$response,$args){
 
         $pdo = $this->container->get('db');
-       $query = $pdo->query("SELECT * FROM articles");
+       $query = $pdo->query("SELECT * FROM institucion");
 
 
-        echo '<pre>';
+      /*   echo '<pre>';
         var_dump($query->fetchAll());
-        echo '</pre>';
+        echo '</pre>'; */
 
        /*  echo '<pre>';
         var_dump($configuraciones);
